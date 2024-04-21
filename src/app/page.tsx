@@ -24,7 +24,7 @@ export default async function Home() {
   return (
     <main className="p-10 flex flex-col justify-center items-center">
       {Blogs.blogs.length > 0 ? ( 
-        <div className="flex gap-5 flex-wrap">
+        <div className="flex gap-5 flex-wrap justify-around items-center">
           {Blogs.blogs.map((post:any) => (
             <Link href={`/blogs/${post.id}`} key={post.id}>
               <Card>
